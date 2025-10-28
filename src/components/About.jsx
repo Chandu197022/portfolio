@@ -12,9 +12,10 @@ export default function About() {
         initial={{ opacity: 0, y: -16 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-5xl font-extrabold mb-10 bg-gradient-to-r from-purple-400 via-gray-300 to-gray-300 bg-clip-text text-transparent tracking-tight"
+        className="text-4xl font-extrabold mb-10 tracking-tight"
+        style={{ color: '#7dd3fc' }}
       >
-        ABOUT <span className="text-purple-400">ME</span>
+        ABOUT ME
       </motion.h1>
       {/* Card */}
       <motion.div
@@ -26,11 +27,9 @@ export default function About() {
           border-4 rounded-3xl shadow-xl
           bg-[#18151d]/80
           p-8 md:p-14
-          border-gradient-to-r from-purple-400 via-gray-300 to-purple-400
         "
         style={{
-          borderImage: 'linear-gradient(to right, #a78bfa, #d1d5db, #a78bfa) 1',
-          borderColor: '#a78bfa'
+          borderColor: "#7dd3fc"
         }}
       >
         <p>
@@ -52,19 +51,19 @@ export default function About() {
         {/* Personal Details */}
         <div className="mt-8 grid grid-cols-1 gap-2 text-[17px]">
           <div>
-            <span className="font-bold text-purple-300">Name:</span>
+            <span className="font-bold" style={{ color: '#7dd3fc' }}>Name:</span>
             <span className="ml-2">Rongali Chandra Kiran</span>
           </div>
           <div>
-            <span className="font-bold text-purple-300">Address:</span>
+            <span className="font-bold" style={{ color: '#7dd3fc' }}>Address:</span>
             <span className="ml-2">Visakhapatnam, Andhra Pradesh</span>
           </div>
           <div>
-            <span className="font-bold text-purple-300">Email:</span>
+            <span className="font-bold" style={{ color: '#7dd3fc' }}>Email:</span>
             <span className="ml-2">chandrakiranrongali@gmail.com</span>
           </div>
           <div>
-            <span className="font-bold text-purple-300">Phone:</span>
+            <span className="font-bold" style={{ color: '#7dd3fc' }}>Phone:</span>
             <span className="ml-2">+91-8919829303</span>
           </div>
         </div>
