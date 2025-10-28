@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { FaBars } from 'react-icons/fa'
 
 const navLinks = [
@@ -13,10 +12,13 @@ export default function Navbar() {
   return (
     <header className="fixed w-full z-40 top-0 bg-black">
       <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
-        {/* Your name in gradient */}
-        <Link to="/" className="text-2xl font-extrabold tracking-wide bg-gradient-to-r from-purple-400 via-gray-300 to-gray-400 bg-clip-text text-transparent uppercase">
+        {/* Name, not a link, light blue */}
+        <span
+          className="text-3xl font-extrabold tracking-wide uppercase"
+          style={{ color: "#7dd3fc" }}
+        >
           RONGALI CHANDRA KIRAN
-        </Link>
+        </span>
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-10 text-white text-lg font-medium">
           {navLinks.map((link) =>
@@ -29,13 +31,7 @@ export default function Navbar() {
                 {link.name}
               </a>
             ) : (
-              <Link
-                key={link.name}
-                to={link.href}
-                className="hover:text-yellow-400 transition"
-              >
-                {link.name}
-              </Link>
+              <span key={link.name}>{link.name}</span>
             )
           )}
         </nav>
