@@ -28,8 +28,8 @@ const contacts = [
 export default function ContactIconsOnly() {
   return (
     <section className="min-h-[40vh] flex flex-col items-center justify-center py-12 bg-black">
-      <h2 className="text-5xl font-extrabold mb-14 bg-gradient-to-r from-purple-400 via-gray-300 to-gray-400 bg-clip-text text-transparent drop-shadow-lg tracking-tight">
-        CONTACT <span className="text-gray-400">ME</span>
+      <h2 className="text-3xl font-extrabold mb-14 text-center text-sky-300 tracking-tight">
+        CONTACT ME
       </h2>
       <div className="flex gap-10 mt-8">
         {contacts.map((c, idx) => (
