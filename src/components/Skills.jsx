@@ -45,7 +45,8 @@ export default function Skills() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="text-5xl font-extrabold text-center mb-14 bg-gradient-to-r from-purple-400 via-gray-300 to-gray-400 bg-clip-text text-transparent tracking-tight"
+        className="text-3xl font-extrabold text-center mb-14 bg-gradient-to-r from-purple-400 via-gray-300 to-gray-400 bg-clip-text text-transparent tracking-tight"
+        style={{ color: "#7dd3fc" }}
       >
         MY SKILLS
       </motion.h2>
