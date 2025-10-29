@@ -1,9 +1,12 @@
-import React from 'react'
-import { projects } from '../data/projects'
-import { Link } from 'react-router-dom'
-import { motion } from 'framer-motion'
+import React from 'react';
+import { projects } from '../data/projects';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
 export default function ProjectsPreview() {
+  // Add your deployed live link here!
+  const weatherAppLiveLink = "https://your-dynamic-weather-web-app-url.com"; // replace this with your real link
+
   return (
     <section id="projects" className="max-w-7xl mx-auto px-6 py-20">
       <motion.h2
@@ -34,7 +37,7 @@ export default function ProjectsPreview() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60"></div>
             </div>
-
+            
             {/* Content */}
             <div className="p-5">
               <h3 className="text-xl font-semibold text-blue-300 mb-2">{p.title}</h3>
@@ -42,20 +45,20 @@ export default function ProjectsPreview() {
                 {p.short}
               </p>
 
-              <div className="mt-5 flex justify-between items-center">
-                {p.link ? (
+              <div className="mt-5 flex justify-between items-center gap-2">
+                {/* LIVE LINK BUTTON - only for Dynamic Weather Web App */}
+                {p.title === "Dynamic Weather Web App" && (
                   <a
-                    href={p.link}
+                    href={'https://weather-app-black-xi.vercel.app/'}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 text-sm font-medium underline underline-offset-4"
+                    className="px-4 py-1.5 rounded-lg bg-blue-500 hover:bg-blue-700 text-white text-sm font-semibold transition-all duration-300"
                   >
-                    Visit Project
+                    Live Link
                   </a>
-                ) : (
-                  <span className="text-gray-500 text-sm italic">No live link</span>
                 )}
 
+                {/* Details Button */}
                 <Link
                   to={`/projects/${p.id}`}
                   className="px-4 py-1.5 rounded-lg bg-blue-400 text-black text-sm font-semibold hover:bg-blue-300 transition-all duration-300"
@@ -68,5 +71,5 @@ export default function ProjectsPreview() {
         ))}
       </div>
     </section>
-  )
+  );
 }
