@@ -38,12 +38,6 @@ export default function Hero() {
             >
               View Projects
             </a>
-            <a
-              href="#contact"
-              className="px-5 py-2 rounded-lg border border-gray-600 text-gray-200 hover:bg-white/10 transition"
-            >
-              Contact Me
-            </a>
           </div>
         </motion.div>
 
