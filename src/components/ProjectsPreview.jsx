@@ -4,8 +4,9 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 export default function ProjectsPreview() {
-  // Add your deployed live link here!
-  const weatherAppLiveLink = "https://your-dynamic-weather-web-app-url.com"; // replace this with your real link
+  
+  const weatherAppLiveLink = "https://weather-app-black-xi.vercel.app/";
+  const solarDashboardLiveLink = "https://solar-dashboard-c16k.onrender.com/";
 
   return (
     <section id="projects" className="max-w-7xl mx-auto px-6 py-20">
@@ -46,10 +47,12 @@ export default function ProjectsPreview() {
               </p>
 
               <div className="mt-5 flex justify-between items-center gap-2">
-                {/* LIVE LINK BUTTON - only for Dynamic Weather Web App */}
-                {p.title === "Dynamic Weather Web App" && (
+                {/* Show Live Link Button for Weather App and Solar Logger */}
+                {(p.title === "Dynamic Weather Web App" || p.title === "Solar Data Logger Dashboard") && (
                   <a
-                    href={'https://weather-app-black-xi.vercel.app/'}
+                    href={p.title === "Dynamic Weather Web App"
+                      ? weatherAppLiveLink
+                      : solarDashboardLiveLink}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="px-4 py-1.5 rounded-lg bg-blue-500 hover:bg-blue-700 text-white text-sm font-semibold transition-all duration-300"
