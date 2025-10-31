@@ -43,7 +43,7 @@ export default function ContactIconsOnly() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: idx * 0.13 }}
-            className="rounded-full bg-[#232323] text-yellow-400 flex items-center justify-center w-[100px] h-[100px] hover:bg-[#444] hover:text-white shadow-lg transition"
+            className="rounded-full bg-[#232323] text-white-400 flex items-center justify-center w-[100px] h-[100px] hover:bg-[#444] hover:text-white shadow-lg transition"
           >
             {c.icon}
           </motion.a>
