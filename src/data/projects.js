@@ -13,7 +13,7 @@ export const projects = [
       <h3 class='text-xl font-semibold text-blue-400 mt-4'>Impact</h3>
       <p>This system minimizes time spent searching for parking, reduces congestion, and enhances user convenience by providing live slot availability through IoT.</p>
     `,
-    tools: ['NodeMCU', 'IR Sensors', 'Servo Motors', 'Adafruit IO', 'IoT', 'Cloud'],
+    tools: ['NodeMCU','IoT'],
     image: 'https://www.mokosmart.com/wp-content/uploads/2022/03/Smart-parking-system-using-IoT.webp'
   },
 
