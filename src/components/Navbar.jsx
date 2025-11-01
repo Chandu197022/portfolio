@@ -26,7 +26,7 @@ export default function Navbar() {
               <a
                 key={link.name}
                 href={link.href}
-                className="hover:text-Skyblue-400 transition"
+                className="hover:text-#7dd3fc transition"
               >
                 {link.name}
               </a>
